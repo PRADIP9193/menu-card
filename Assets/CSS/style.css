@@ -16,6 +16,11 @@
 }
 html {
   box-sizing: border-box;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 #main {
   min-height: 100vh;
