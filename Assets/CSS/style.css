@@ -62,7 +62,7 @@ html::-webkit-scrollbar {
   position: sticky;
   top: 0;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .scroller:nth-child(1) {
   width: max-content;
@@ -77,8 +77,8 @@ html::-webkit-scrollbar {
   scrollbar-width: none; /* Firefox */
 }
 .scroller a {
-  /*min-width: 100px;
-  */
+  min-width: 100px;
+
   padding: 0.5rem 0.7rem;
   /*border: 1px solid black;
   */
@@ -97,6 +97,7 @@ html::-webkit-scrollbar {
   -moz-box-shadow: 0 0 5px 2px #282a2d;
   -webkit-box-shadow: 0 0 5px 2px #282a2d;
   -webkit-border-radius: 1rem;
+  width: fit-content;
 }
 .scroller a:nth-child(1) {
   min-width: 138px;
