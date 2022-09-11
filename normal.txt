@@ -1,0 +1,171 @@
+
+<section class="accordion-section">
+                <div class="container">
+                    <div class="accordion">
+                        <!-- items  -->
+                        <div class="accordion-item" id="question1">
+                            <a class="accordion-link" href="#question1">
+                                <div class="flex">
+                                    <img class="title-img" src="Assets/IMG/icons8-spaghetti-40.png" alt="">
+                                    <h2 class="title">Sp<span style="color: red;">i</span>cy Chinese</h2>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <ul>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+
+
+                                </ul>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item" id="question2">
+                            <a class="accordion-link" href="#question2">
+                                <div class="flex">
+
+                                    <h2 class="title">Sp<span style="color: red;">i</span>cy Chinese</h2>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <ul>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+
+
+                                </ul>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item" id="question3">
+                            <a class="accordion-link" href="#question3">
+                                <div class="flex">
+                                    <h2 class="title">Sp<span style="color: red;">i</span>cy Chinese</h2>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <ul>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+
+
+                                </ul>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item" id="question4">
+                            <a class="accordion-link" href="#question4">
+                                <div class="flex">
+                                    <h2 class="title">Sp<span style="color: red;">i</span>cy Chinese</h2>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <ul>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Soybean chilly </p>
+                                        <p class="price">₹70</p>
+                                    </div>
+
+
+                                </ul>
+                            </div>
+                            <hr>
+                        </div>
+
+                    </div>
+                </div>
+            </section>

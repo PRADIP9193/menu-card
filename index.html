@@ -11,6 +11,7 @@
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/CSS/style.scss">
 
 </head>
 
@@ -18,12 +19,16 @@
     <!-- main page -->
 
     <section class="main" id="main">
-        <!-- search box  -->
-        <div class="search-box">
 
+        <div class="title">
+            <h2>Fine Dining and Hotel</h2>
         </div>
+        <!-- search box  -->
+        <!-- <div class="search-box">
+
+        </div> -->
         <div class="scroller">
-            <a href="#question1" class="heading">item-01</a>
+            <a href="#todaysSpecial" class="heading">Todays Special</a>
             <a href="#question2" class="heading">item-02</a>
             <a href="#question3" class="heading">item-03</a>
             <a href="#question4" class="heading">item-04</a>
@@ -35,214 +40,185 @@
             <a href="" class="heading">item-10</a>
         </div>
         <div class="main-menu">
-            <!-- spicy Chinese  -->
-            <!-- <div class="main-box">
-                <div class="title-box">
-                    <img src="Assets/IMG/icons8-spaghetti-40.png" alt="">
-                    <h2 class="title">Sp<span style="color: red;">i</span>cy Chinese</h2>
-                </div>
-                <div class="item-box">
-                    <ul>
-                        <div class="item">
-                            <p class="name">Soybean chilly </p>
-                            <p class="price">₹70</p>
+
+            <div class="col">
+                <div class="tabs">
+                    <div class="tab todaysSpecial">
+                        <input type="checkbox" id="chck1">
+                        <label class="tab-label" for="chck1" id="todaysSpecial">Todays special</label>
+                        <div class="tab-content" style="display : block;">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <p class="item-name">Idli</p>
+                                    <p class="price">75 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Medu Wada</p>
+                                    <p class="price">80 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Idli Wada</p>
+                                    <p class="price">80 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Sada Dosa </p>
+                                    <p class="price">75 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Masala Dosa</p>
+                                    <p class="price">85 ₹</p>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="item">
-                            <p class="name">Soybean chilly </p>
-                            <p class="price">₹70</p>
+                    </div>
+                    <!-- South Indian Snacks  -->
+                    <div class="tab">
+                        <input type="checkbox" id="chck2">
+                        <label class="tab-label" for="chck2" id="#todaysSpecial">South Indian Snacks</label>
+                        <div class="tab-content">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <p class="item-name">Idli</p>
+                                    <p class="price">75 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Medu Wada</p>
+                                    <p class="price">80 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Idli Wada</p>
+                                    <p class="price">80 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Sada Dosa </p>
+                                    <p class="price">75 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Masala Dosa</p>
+                                    <p class="price">85 ₹</p>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="item">
-                            <p class="name">Soybean chilly </p>
-                            <p class="price">₹70</p>
+                    </div>
+
+                    <div class="tab">
+                        <input type="checkbox" id="chck3">
+                        <label class="tab-label" for="chck3">Sandwiches</label>
+                        <div class="tab-content">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <p class="item-name">Veg Sandwich </p>
+                                    <p class="price">90 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Veg Cheese Sandwich </p>
+                                    <p class="price">110 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Cheese Sandwich</p>
+                                    <p class="price">110 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Egg Omlette Sandwich </p>
+                                    <p class="price">120 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Chicken Sandwich</p>
+                                    <p class="price">175 ₹</p>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="item">
-                            <p class="name">Soybean chilly </p>
-                            <p class="price">₹70</p>
+                    </div>
+
+                    <div class="tab">
+                        <input type="checkbox" id="chck4">
+                        <label class="tab-label" for="chck4">Sandwiches</label>
+                        <div class="tab-content">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <p class="item-name">Veg Sandwich </p>
+                                    <p class="price">90 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Veg Cheese Sandwich </p>
+                                    <p class="price">110 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Cheese Sandwich</p>
+                                    <p class="price">110 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Egg Omlette Sandwich </p>
+                                    <p class="price">120 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Chicken Sandwich</p>
+                                    <p class="price">175 ₹</p>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="item">
-                            <p class="name">Soybean chilly </p>
-                            <p class="price">₹70</p>
+                    </div>
+
+                    <div class="tab">
+                        <input type="checkbox" id="chck5">
+                        <label class="tab-label" for="chck5">Sandwiches</label>
+                        <div class="tab-content">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <p class="item-name">Veg Sandwich </p>
+                                    <p class="price">90 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Veg Cheese Sandwich </p>
+                                    <p class="price">110 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Cheese Sandwich</p>
+                                    <p class="price">110 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Egg Omlette Sandwich </p>
+                                    <p class="price">120 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Chicken Sandwich</p>
+                                    <p class="price">175 ₹</p>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="item">
-                            <p class="name">Soybean chilly </p>
-                            <p class="price">₹70</p>
+                    </div>
+
+                    <div class="tab">
+                        <input type="checkbox" id="chck6">
+                        <label class="tab-label" for="chck6">Sandwiches</label>
+                        <div class="tab-content">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <p class="item-name">Veg Sandwich </p>
+                                    <p class="price">90 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Veg Cheese Sandwich </p>
+                                    <p class="price">110 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Cheese Sandwich</p>
+                                    <p class="price">110 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Egg Omlette Sandwich </p>
+                                    <p class="price">120 ₹</p>
+                                </li>
+                                <li class="menu-item">
+                                    <p class="item-name">Chicken Sandwich</p>
+                                    <p class="price">175 ₹</p>
+                                </li>
+                            </ul>
                         </div>
-
-
-                    </ul>
-
-                </div>
-            </div> -->
-            <section class="accordion-section">
-                <div class="container">
-                    <div class="accordion">
-                        <!-- items  -->
-                        <div class="accordion-item" id="question1">
-                            <a class="accordion-link" href="#question1">
-                                <div class="flex">
-                                    <img class="title-img" src="Assets/IMG/icons8-spaghetti-40.png" alt="">
-                                    <h2 class="title">Sp<span style="color: red;">i</span>cy Chinese</h2>
-                                </div>
-                                <i class="icon ion-md-arrow-forward"></i>
-                                <i class="icon ion-md-arrow-down"></i>
-                            </a>
-                            <div class="answer">
-                                <ul>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-
-
-                                </ul>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="accordion-item" id="question2">
-                            <a class="accordion-link" href="#question2">
-                                <div class="flex">
-
-                                    <h2 class="title">Sp<span style="color: red;">i</span>cy Chinese</h2>
-                                </div>
-                                <i class="icon ion-md-arrow-forward"></i>
-                                <i class="icon ion-md-arrow-down"></i>
-                            </a>
-                            <div class="answer">
-                                <ul>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-
-
-                                </ul>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="accordion-item" id="question3">
-                            <a class="accordion-link" href="#question3">
-                                <div class="flex">
-                                    <h2 class="title">Sp<span style="color: red;">i</span>cy Chinese</h2>
-                                </div>
-                                <i class="icon ion-md-arrow-forward"></i>
-                                <i class="icon ion-md-arrow-down"></i>
-                            </a>
-                            <div class="answer">
-                                <ul>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-
-
-                                </ul>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="accordion-item" id="question4">
-                            <a class="accordion-link" href="#question4">
-                                <div class="flex">
-                                    <h2 class="title">Sp<span style="color: red;">i</span>cy Chinese</h2>
-                                </div>
-                                <i class="icon ion-md-arrow-forward"></i>
-                                <i class="icon ion-md-arrow-down"></i>
-                            </a>
-                            <div class="answer">
-                                <ul>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-                                    <div class="item">
-                                        <p class="name">Soybean chilly </p>
-                                        <p class="price">₹70</p>
-                                    </div>
-
-
-                                </ul>
-                            </div>
-                            <hr>
-                        </div>
-
                     </div>
                 </div>
-            </section>
+            </div>
+
         </div>
 
     </section>

@@ -18,8 +18,26 @@ html {
   box-sizing: border-box;
 }
 #main {
-  height: 100vh;
-  background: #63954b;
+  min-height: 100vh;
+  /* background: #63954b; */
+  background-image: linear-gradient(
+    117deg,
+    rgba(123, 216, 96, 1) 39.2%,
+    rgba(255, 255, 255, 1) 156.2%
+  );
+  background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+  background-color: #004f8c;
+  background-image: url();
+}
+
+.title {
+  text-align: center;
+}
+.title h2 {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  letter-spacing: 3px;
 }
 .search-box {
   height: 2rem;
@@ -31,7 +49,15 @@ html {
   display: flex;
   overflow-x: scroll;
   padding: 0.5rem;
-  background: #000;
+  background: #1a252f;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+}
+.scroller:nth-child(1) {
+  width: max-content;
 }
 .scroller::-webkit-scrollbar {
   display: none;
@@ -43,24 +69,38 @@ html {
   scrollbar-width: none; /* Firefox */
 }
 .scroller a {
-  /* min-width: 100px; */
+  /*min-width: 100px;
+  */
   padding: 0.5rem 0.7rem;
-  border: 1px solid black;
+  /*border: 1px solid black;
+  */
   margin: 0 5px;
-  border-radius: 0.7rem;
-  -webkit-border-radius: 0.7rem;
-  -moz-border-radius: 0.7rem;
-  -ms-border-radius: 0.7rem;
-  -o-border-radius: 0.7rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
   background-color: aliceblue;
   text-decoration: None;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-box-shadow: 0 0 5px 2px #282a2d;
+  -webkit-box-shadow: 0 0 5px 2px #282a2d;
+  -webkit-border-radius: 1rem;
 }
-
+.scroller a:nth-child(1) {
+  min-width: 138px;
+}
 /* main menu  scection  */
 .main-menu {
   width: 100%;
   /* border: 1px solid red; */
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-menu .main-box {
@@ -186,4 +226,132 @@ html {
 
 .accordion-item:target .accordion-link .ion-md-arrow-down {
   display: block;
+}
+
+body {
+  color: #2c3e50;
+  background: #ecf0f1;
+}
+
+h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 0.5em;
+  font-weight: normal;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 1000px;
+}
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.tab-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1em;
+  background: #2c3e50;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+
+.tab-label:hover {
+  background: #1a252f;
+}
+
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.tab-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+
+.tab-close:hover {
+  background: #1a252f;
+}
+
+input:checked + .tab-label {
+  background: #1a252f;
+}
+
+input:checked + .tab-label::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+/* menu list  */
+.menu-list {
+  list-style-type: circle;
+}
+.menu-list .menu-item {
+  display: flex;
+  justify-content: space-between;
+}
+/* responsive style  */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+  .main-menu {
+    padding: 0.7rem;
+  }
 }
